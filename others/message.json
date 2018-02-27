@@ -1,0 +1,79 @@
+{
+  "name": "薛佳运",
+  "birthday": "1992",
+  "phone": "18115125623",
+  "email": "594123438@qq.com",
+  "motto": "现实像块石头，精神却像一个蛋，石头虽然坚硬，可蛋里才是生命",
+  "work":"前端开发工程师",
+  "college":"南京审计学院",
+  "major":"审计",
+  "degree":"本科",
+  "join":"前端开发",
+  "hobby":[
+    "写代码（最大的乐趣）",
+    "浏览网页（参考设计超赞的网页，学习他们的思想，他们的方法）",
+    "看电影（科幻片最佳）",
+    "爬山（锻炼身体）"
+  ],
+  "evaluation":[
+    "善于在生活中学习，对美比较敏感，每当看到设计精美的网页，总会细细品味、学习并任性的收藏",
+    "有一点点完美主义者，对自己的作品要求较高",
+    "热爱一件事物就一定要做好，时常因此“废寝忘食”",
+    "感谢您百忙之中的观看，真诚的期盼您的电联"
+  ],
+  "skill":[
+    {
+      "HTML": "85%-#FCC748",
+      "CSS": "85%-#CDF0E9",
+      "JavaScript": "70%-#BADF90",
+      "jQuery": "65%-#F2B88B",
+      "Ajax": "60%-#91E0F1",
+      "HTML5": "70%-#FFF228",
+      "CSS3": "70%-#29DE6B",
+      "Git": "50%-#F78EA6",
+      "Gulp": "50%-#17C8A8",
+      "PHP": "5%-#14CDD6",
+      "NodeJs": "6%-#F36B6B",
+      "AngularJs": "6%-#ccc",
+      "PhotoShop": "65%-#81A8F6"
+    }],
+    "project":[
+    {
+      "name":"Wedding",
+      "bg_color":"#f5e653",
+      "type":"h5",
+      "link":"http://winterworld.cn/project/wedding/",
+      "time":"2018/02-至今",
+      "work":"独立完成，负责页面设计及前台编码",
+      "info":"实现一个线上的购物平台的页面设计及相关数据的处理,运用ajax请求json数据，并将其返回到页面中"
+    },
+      {
+        "name":"360",
+        "bg_color": "rgb(146,246,237)",
+        "type":"h5",
+        "link":"http://winterworld.cn/project/360/",
+        "time":"2018/01-2018/01",
+        "work":"独立完成，负责页面设计及前台编码",
+        "info":"运用h5和c3动画来实现一个浏览器的宣传页面"
+      },
+      {
+        "name":"wjs",
+        "bg_color": "rgb(146,246,237)",
+        "type":"PC",
+        "link":"http://winterworld.cn/project/wjs_x/",
+        "time":"2017/12-2017/12",
+        "work":"独立完成，负责页面设计及前台编码",
+        "info":"熟练运用bootStrap实现了响应式布局"
+      },
+      {
+        "name":"mobile_jd",
+        "bg_color": "rgb(146,246,237)",
+        "type":"mobile",
+        "link":"http://winterworld.cn/project/mobile_jd/",
+        "time":"2017/11-2017/11",
+        "work":"独立完成，负责页面设计及前台编码",
+        "info":"仿照手机京东页面，做了简单的移动页面"
+      }
+    ]
+
+}

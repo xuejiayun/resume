@@ -1,0 +1,597 @@
+//reset
+//清除内外边距
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,          /*结构元素*/
+dl,dt,dd,ul,ol,li,                               /*列表元素*/
+pre,                                             /*文本格式元素*/
+fieldset,legend,button,input,textarea,           /*表单元素*/
+th,td {
+      padding: 0;
+      margin: 0;
+}
+img {
+    display: block;
+}
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+h1, h2, h3, h4, h5, h6{
+    font-weight: 100;
+}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化*/
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; overflow-x: hidden;}
+/* 清除获取焦点时的蓝框*/
+select,input,textarea,button,a {
+    outline: none;
+}
+
+a {
+    color: #fff;
+}
+
+/*header部分开始*/
+header {
+    z-index: 1000;
+    height: 50px;
+    padding: 30px 0 0 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    #logo {
+        display: block;
+        height: 50px;
+        width: 170px;
+        background: url("../images/ico_bg1.png") -48px 0 no-repeat;
+        margin: 6px 0 0 50px;
+    }
+    nav {
+        position: absolute;
+        height: 50px;
+        top: 30px;
+        right: 50px;
+        li {
+            float: left;
+        }
+        a {
+            display: block;
+            line-height: 50px;
+            font-size: 20px;
+            font-family: 'Microsoft JhengHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+            font-weight: 500;
+            margin: 0 20px;
+            padding: 0 10px;
+            &:hover {
+                text-decoration: none;
+                color: #8F9DA4;
+                border-bottom: 1px solid #8F9DA4;
+            }
+        }
+    }
+}
+/*header部分结束*/
+
+/*aside部分开始*/
+aside {
+    z-index: 1000;
+    position: fixed;
+    right: 50px;
+    width: 24px;
+    .page {
+        width: 21px;
+        height: 21px;
+        background: url("../images/dot.png") 5px 5px no-repeat;
+        position: relative;
+        margin: 20px 5px;
+        &:hover{
+            background-position: 0 bottom;
+        }
+        &:hover .page-title {
+            display: block;
+        }
+        .page-title {
+            position: absolute;
+            right: 100%;
+            font-size: 12px;
+            width: 70px;
+            height: 12px;
+            text-align: right;
+            line-height: 12px;
+            padding-right: 10px;
+            color: #ccc;
+            top: 5px;
+            display: none;
+        }
+    }
+    #page-home {
+        background-position: 0 bottom;
+    }
+}
+/*aside部分结束*/
+
+/*war-1部分开始*/
+.war-1 {
+    background: rgb(30,87,153);
+    background:-webkit-linear-gradient(to bottom,rgba(30,87,153,1) 0%,rgba(146,246,237,1) 100%);
+    background:-moz-linear-gradient(to bottom,rgba(30,87,153,1) 0%,rgba(146,246,237,1) 100%);
+    background:-ms-linear-gradient(to bottom,rgba(30,87,153,1) 0%,rgba(146,246,237,1) 100%);
+    background: linear-gradient(to bottom,rgba(30,87,153,1) 0%,rgba(146,246,237,1) 100%);
+    .war-content-1{
+        width: 100%;
+        height: 100%;
+        background: url('../images/homeBg.png') no-repeat right center;
+        margin: 0 auto;
+        -webkit-transform: translateY(-2000px);
+        -moz-transform: translateY(-2000px);
+        -ms-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+        -webkit-transition: all 1.2s;
+        -moz-transition: all 1.2s;
+        transition: all 1.2s;
+    }
+    .war-content-1-title{
+        width: 1100px;
+        height: 100%;
+        margin: 0 auto;
+        background: url('../images/homeTitle.png') no-repeat left center;
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.1);
+        -ms-transform: scale(0.1);
+        transform: scale(0.1);
+        -webkit-transition: all 1.2s;
+        -moz-transition: all 1.2s;
+        transition: all 1.2s 0.6s;
+    }
+    .war-content-1.current,
+    .war-content-1.current .war-content-1-title {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+}
+/*war-1部分结束*/
+
+/*war-2部分开始*/
+.war-2 {
+    background: rgba(146,246,237,1);
+    background: -webkit-linear-gradient(to bottom,  rgba(146,246,237,1) 0%, rgb(211, 220, 182) 67%);
+    background: -moz-linear-gradient(to bottom,  rgba(146,246,237,1) 0%, rgb(211, 220, 182) 67%);
+    background: -ms-linear-gradient(to bottom,  rgba(146,246,237,1) 0%, rgb(211, 220, 182) 67%);
+    background: linear-gradient(to bottom,  rgba(146,246,237,1) 0%, rgb(211, 220, 182) 67%);
+    overflow: hidden;
+    .war-2-sun {
+        width: 50%;
+        height: 60%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        background: url("../images/sun.png") no-repeat;
+        background-size: 100% 100%;
+        display: none;
+    }
+    .war-2-bottom {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: none;
+    }
+    .info-content {
+        width: 1000px;
+        margin: 0 auto;
+        height: 500px;
+    }
+    .info-content-main {
+        text-align: center;
+        color: #fff;
+        .info-photo {
+            height: 200px;
+            width: 200px;
+            margin:100px auto 20px;
+            border-radius: 50%;
+            border: 8px solid rgba(255,255,255,0.5);
+            overflow: hidden;
+            display: none;
+            img {
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .info-name {
+            font-size: 40px;
+            font-family: 'Microsoft JhengHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+            margin-bottom: 10px;
+            display: none;
+        }
+        .info-love {
+            overflow: hidden;
+            margin: 0 auto;
+            font-family: "Courier";
+            border-top: 3px solid rgba(255,255,255,0.3);
+            font-size: 22px;
+            padding-top: 10px;
+            width: 0;
+            font-weight: 600;
+            #loveword{
+                display: none;
+            }
+        }
+        .info-email,
+        .info-phone {
+            font-size: 20px;
+            padding-top: 10px;
+            font-family: "Courier";
+            display: none;
+            font-weight: 600;
+        }
+        .info-work {
+            padding-top: 10px;
+            font-family: "微软雅黑", "SimSun", "宋体", "Arial Narrow";
+            font-size: 26px;
+            display: none;
+        }
+
+    }
+}
+/*war-2部分结束*/
+
+/*war-3部分开始*/
+.war-3 {
+    background: rgb(5,20,23);
+    background: -webkit-linear-gradient(to bottom,  rgba(5,20,23,1) 0%,rgba(28,58,63,1) 22%,rgba(64,134,142,1) 53%,rgba(138,249,249,1) 100%);
+    background: -moz-linear-gradient(to bottom,  rgba(5,20,23,1) 0%,rgba(28,58,63,1) 22%,rgba(64,134,142,1) 53%,rgba(138,249,249,1) 100%);
+    background: -ms-linear-gradient(to bottom,  rgba(5,20,23,1) 0%,rgba(28,58,63,1) 22%,rgba(64,134,142,1) 53%,rgba(138,249,249,1) 100%);
+    background: linear-gradient(to bottom,  rgba(5,20,23,1) 0%,rgba(28,58,63,1) 22%,rgba(64,134,142,1) 53%,rgba(138,249,249,1) 100%);
+    overflow: hidden;
+    .war-3-moon {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: -220px;
+        top: 10%;
+        background: url("../images/ico_bg1.png") -220px -70px no-repeat;
+    }
+    .war-content-3 {
+        background: url('../images/star.png') no-repeat top 10% center;
+        overflow: hidden;
+        .war-content-w {
+            width: 1100px;
+            height: auto;
+            margin: 220px auto 0;
+        }
+        .war-skill-bg {
+            height: 400px;
+            width: 100px;
+            float: left;
+            background: url("../images/ico_bg1.png") -420px -70px no-repeat;
+            display: none;
+        }
+        .war-content-skill {
+            width: 900px;
+            min-height: 500px;
+            height: 70%;
+            margin-left: 150px;
+            .skill_list {
+                height: 20px;
+                background: rgba(255,255,255,0.1);
+                margin: 8px 0;
+                padding: 4px;
+                border-radius: 20px;
+            }
+            .course {
+                float: left;
+                padding: 0 10px;
+                width: 100px;
+                font-size: 16px;
+                text-align: right;
+                height: 20px;
+                line-height: 20px;
+                color: #fff;
+            }
+            .courses {
+                height: 20px;
+                border-radius: 20px;
+                line-height: 20px;
+                text-align: center;
+                color: #666;
+            }
+        }
+    }
+}
+/*war-3部分结束*/
+
+/*war-4部分开始*/
+.war-4 {
+    background: rgba(138,249,249,1);
+    background: -webkit-linear-gradient(to bottom,  rgba(138,249,249,1) 0%,rgba(222,225,226,1) 100%);
+    background: -moz-linear-gradient(to bottom,  rgba(138,249,249,1) 0%,rgba(222,225,226,1) 100%);
+    background: -ms-linear-gradient(to bottom,  rgba(138,249,249,1) 0%,rgba(222,225,226,1) 100%);
+    background: linear-gradient(to bottom,  rgba(138,249,249,1) 0%,rgba(222,225,226,1) 100%);
+    .topLeft_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 300px;
+        width: 300px;
+        background: url('../images/ico_bg1.png') -420px -1200px no-repeat;
+        display: none;
+    }
+    .topRight_bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 300px;
+        width: 300px;
+        background: url('../images/ico_bg1.png') -1000px -1200px no-repeat;
+        display: none;
+    }
+    .war-content-5 {
+        overflow: hidden;
+        .project-content {
+            width: 1100px;
+            margin: 200px auto 0;
+        }
+        .war-project-bg {
+            float: left;
+            height: 450px;
+            width: 140px;
+            background: url('../images/ico_bg1.png') -1240px -50px no-repeat;
+            position: relative;
+            margin-bottom: 200px;
+            left: -600px;
+            overflow: hidden;
+            .war-project-more {
+                display: block;
+                height: 92px;
+                width: 92px;
+                border-radius: 50%;
+                position: absolute;
+                left: 3px;
+                bottom: 50px;
+                background: rgba(255,157,170,0.8) url('../images/ico_bg1.png') -220px -470px no-repeat;
+            }
+        }
+        .war-project-right {
+            height: 0;
+            overflow: hidden;
+            .project-list {
+                height: 160px;
+            }
+            .project-list-left {
+                padding-top:50px;
+                font-size: 16px;
+                font-family: "Georgia";
+                text-align: center;
+                line-height: 20px;
+                float: left;
+                color: #dd9daa;
+                height: 110px;
+                width: 180px;
+                background: url('../images/ico_bg1.png') -670px -570px no-repeat;
+            }
+            .project-list-left div {
+                width: 110px;
+            }
+            .project-list-right {
+                height: 130px;
+                overflow: hidden;
+                padding: 15px;
+                font-size: 16px;
+                color: #666;
+            }
+            .project-list-name{
+                color: #dd9daa;
+                font-weight: bold;
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+            .project-list-name a{
+                color: #dd9daa;
+            }
+            .project-list-work,.project-list-info{
+                line-height: 24px;
+            }
+            .list-title{
+                color: #fff;
+            }
+        }
+    }
+}
+/*war-4部分结束*/
+
+/*war-5部分开始*/
+.war-5 {
+    background: rgb(85,235,208);
+    background: -webkit-linear-gradient(to bottom, rgba(222,225,226,1) 0%,rgba(85,235,208,1) 50%,rgba(72,96,125,1) 100%);
+    background: -moz-linear-gradient(to bottom,  rgba(222,225,226,1) 0%,rgba(85,235,208,1) 50%,rgba(72,96,125,1) 100%);
+    background: -ms-linear-gradient(to bottom,  rgba(222,225,226,1) 0%,rgba(85,235,208,1) 50%,rgba(72,96,125,1) 100%);
+    background: linear-gradient(to bottom,  rgba(222,225,226,1) 0%,rgba(85,235,208,1) 50%,rgba(72,96,125,1) 100%);
+    .war-content-6 {
+        overflow: hidden;
+        .education-content {
+            width: 1100px;
+            margin: 150px auto 0;
+            height: 560px;
+            background: url('../images/bg6.png') center bottom no-repeat;
+        }
+        .education-list-war {
+            overflow: hidden;
+            margin: 0 auto;
+            width: 680px;
+        }
+        .education-list {
+            float: left;
+            cursor: pointer;
+            height: auto;
+            min-height: 71px;
+            width: 140px;
+            margin: 0 5px;
+            color: #fff;
+            font-family: 'Microsoft JhengHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+            .education-list-title {
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
+                background: #ff9daa;
+                border-bottom: 1px solid rgba(255,255,255,0.3);
+                border-radius: 5px 5px 0 0;
+            }
+            .education-list-con {
+                padding: 40px 20px;
+                background: rgba(255,255,255,0.3);
+                font-size: 40px;
+                overflow: hidden;
+                text-align: center;
+                height: auto;
+                display: none;
+            }
+            .education-list-bot {
+                height: 20px;
+                background-color: #ff9daa;
+                border-radius: 0 0 5px 5px;
+            }
+        }
+
+    }
+}
+/*war-5部分结束*/
+
+/*war-6部分开始*/
+.war-6 {
+    position: relative;
+    background: rgb(72,96,125);
+    background: -webkit-linear-gradient(to bottom,  rgba(72,96,125,1) 0%,rgba(162,186,211,1) 100%);
+    background: -moz-linear-gradient(to bottom,  rgba(72,96,125,1) 0%,rgba(162,186,211,1) 100%);
+    background: -ms-linear-gradient(to bottom,  rgba(72,96,125,1) 0%,rgba(162,186,211,1) 100%);
+    background: linear-gradient(to bottom,  rgba(72,96,125,1) 0%,rgba(162,186,211,1) 100%);
+    .top_bg {
+        height: 600px;
+        width: 1100px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        margin-left: -550px;
+        background: url("../images/bg7.png") no-repeat;
+        display: none;
+    }
+    .bottom_bg {
+        height: 35%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: none;
+        background: rgba(28,149,45,0.63);
+        background: -webkit-linear-gradient(to bottom,  rgba(72,96,125,0) 0%,rgba(64,106,111,0) 18%,rgba(28,149,45,0.63) 100%);
+        background: -moz-linear-gradient(to bottom,  rgba(72,96,125,0) 0%,rgba(64,106,111,0) 18%,rgba(28,149,45,0.63) 100%);
+        background: -ms-linear-gradient(to bottom,  rgba(72,96,125,0) 0%,rgba(64,106,111,0) 18%,rgba(28,149,45,0.63) 100%);
+        background: linear-gradient(to bottom,  rgba(72,96,125,0) 0%,rgba(64,106,111,0) 18%,rgba(28,149,45,0.63) 100%);
+    }
+    .war-content-7 {
+        overflow: hidden;
+        .hobby-content {
+            height: 500px;
+            width: 1000px;
+            margin: 200px auto 0;
+        }
+        .hobby_main {
+            height: 0;
+            width: 0;
+            margin-left: 50%;
+            margin-top: 50%;
+            background: rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px 0 5px 0;
+        }
+        .hobby_main_topRight,.hobby_main_bottomLeft{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+        }
+        .hobby_main_topRight{
+            border-top: 3px solid #fff;
+            border-right: 3px solid #fff;
+            top: 0;
+            right: 0;
+        }
+        .hobby_main_bottomLeft{
+            border-bottom: 3px solid #fff;
+            border-left: 3px solid #fff;
+            bottom: 0;
+            left: 0;
+        }
+        .hobbyInfo_mess{
+            padding: 0 30px;
+        }
+        .hobbyInfo_title{
+            font-size: 18px;
+            font-weight: bold;
+            height: 35px;
+            line-height: 35px;
+            padding-top: 20px;
+            border-bottom: 2px solid #ff9daa;
+            color: #fff;
+            font-family: 'Microsoft JhengHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+        }
+        .hobbyInfo_main{
+            padding: 20px 10px 10px 10px;
+
+        }
+        .hobbyInfo_list{
+            line-height: 26px;
+            font-size: 14px;
+            color:#fff;
+        }
+    }
+}
+/*war-6部分结束*/
+
+/*war-7部分开始*/
+/*war-7部分结束*/
+
+

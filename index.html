@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端工程师_薛佳运的简历</title>
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet/less" href="./css/demo.less">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/less.js"></script>
+</head>
+<body>
+    <div class="resume">
+        <!--顶部nav-->
+        <header>
+            <a href="" id="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">个人简历</a></li>
+                    <li><a href="http://winterworld.cn/xue/">分享笔记</a></li>
+                    <li><a href="http://winterworld.cn/project/wedding/">项目经验</a></li>
+                    <li><a href="">建议</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--顶部nav结束-->
+
+        <!--右侧圆点nav开始-->
+        <aside>
+            <a href="#page1">
+                <div id="page-home" class="page page-1">
+                    <div class="page-title">首页</div>
+                </div>
+            </a>
+            <a href="#page2">
+                <div id="page-info" class="page page-2">
+                    <div class="page-title">基本信息</div>
+                </div>
+            </a>
+            <a href="#page3">
+                <div id="page-skill" class="page page-3">
+                    <div class="page-title">专业技能</div>
+                </div>
+            </a>
+            <a href="#page4">
+                <div id="page-project" class="page page-5">
+                    <div class="page-title">项目经验</div>
+                </div>
+            </a>
+            <a href="#page5">
+                <div id="page-education" class="page page-6">
+                    <div class="page-title">教育程度</div>
+                </div>
+            </a>
+            <a href="#page6">
+                <div id="page-hobby" class="page page-7">
+                    <div class="page-title">兴趣爱好</div>
+                </div>
+            </a>
+        </aside>
+        <!--右侧圆点nav结束-->
+
+        <!--war-1开始-->
+        <div id="war-home" class="section war-1 war">
+            <div class="war-content war-content-1 current">
+                <div class="war-content-1-title"></div>
+            </div>
+        </div>
+        <!--war-1结束-->
+
+        <!--war-2开始-->
+        <div id="war-info" class="section war-2 war" >
+            <div class="war-2-sun" id="war-2-sun"></div>
+            <img src="./images/bg2.png" alt="" class="war-2-bottom" id="lou">
+            <div class="info-content">
+                <div class="info-content-main">
+                    <div class="info-photo" id="info-photo">
+                        <img src="./images/pho.jpg" alt="">
+                    </div>
+                    <div id="info-name" class="info-name"></div>
+                    <div id="info-love" class="info-love">
+                        <span id="loveword"></span>
+                    </div>
+                    <div id="info-email" class="info-email"></div>
+                    <div id="info-phone" class="info-phone"></div>
+                    <div id="info-work" class="info-work"></div>
+                </div>
+            </div>
+        </div>
+        <!--war-2结束-->
+
+        <!--war-3开始-->
+        <div id="war-skill" class="section war-3">
+            <div class="war-3-moon" id="war-3-moon"></div>
+            <div class="war-content-3">
+                <div class="war-content-w">
+                    <div class="war-skill-bg" id="war-skill-bg"></div>
+                    <ul class="war-content-skill" id="war-content-skill">
+                    </ul>
+                    <input type="hidden" id="hidden">
+                </div>
+            </div>
+        </div>
+        <!--war-3结束-->
+
+        <!--war-4开始-->
+        <div id="war-project" class="section war-4">
+            <div class="topLeft_bg" id="topLeft_bg"></div>
+            <div class="topRight_bg" id="topRight_bg"></div>
+            <div id="project" class="war-content-5">
+                <div class="project-content">
+                    <div id="war-project-bg" class="war-project-bg">
+                        <a class="war-project-more" target="_blank" href="#"></a>
+                    </div>
+                    <div id="war-project-right" class="war-project-right"></div>
+                </div>
+            </div>
+        </div>
+        <!--war-4结束-->
+
+        <!--war-5开始-->
+        <div id="war-education" class="section war-5">
+            <div id="education" class="war-content-6">
+                <div class="education-content">
+                    <div class="education-list-war">
+                        <div class="education-list">
+                            <div class="education-list-title">毕业院校</div>
+                            <div id="education-college" class="education-list-con"></div>
+                            <div class="education-list-bot"></div>
+                        </div>
+                        <div class="education-list">
+                            <div class="education-list-title">主修专业</div>
+                            <div id="education-major" class="education-list-con"></div>
+                            <div class="education-list-bot"></div>
+                        </div>
+                        <div class="education-list">
+                            <div class="education-list-title">专业学位</div>
+                            <div id="education-degree" class="education-list-con"></div>
+                            <div class="education-list-bot"></div>
+                        </div>
+                        <div class="education-list">
+                            <div class="education-list-title">兴趣专业</div>
+                            <div id="education-join" class="education-list-con"></div>
+                            <div class="education-list-bot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--war-5结束-->
+
+        <!--war-6开始-->
+        <div id="war-hobby" class="section war-6">
+            <div class="bottom_bg"></div>
+            <div class="top_bg"></div>
+            <div id="hobby" class="war-content-7">
+                <div class="hobby-content">
+                    <div id="hobby_main" class="hobby_main">
+                        <div class="hobby_main_topRight"></div>
+                        <div class="hobby_main_bottomLeft"></div>
+                        <div class="hobbyInfo_mess hobby_mess">
+                            <div class="hobbyInfo_title">兴趣爱好</div>
+                            <div id="hobby_war" class="hobbyInfo_main"></div>
+                        </div>
+                        <div class="hobbyInfo_mess info_mess">
+                            <div class="hobbyInfo_title">个人简介</div>
+                            <div id="info_war" class="hobbyInfo_main"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--war-6结束-->
+        </div>
+    <!--</div>-->
+    <script type="text/javascript" src="js/demo.js"></script>
+</body>
+</html>
